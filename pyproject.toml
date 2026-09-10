@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cs-cheat-radar"
+version = "4.0.0"
+description = "Triagem de suspeitas de cheat a partir de replays, logs e APIs publicas - multi-jogo, sem tocar no processo do jogo."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+demo = ["demoparser2>=0.31"]
+steam = ["requests>=2.31"]
+all = ["demoparser2>=0.31", "requests>=2.31"]
+
+[project.scripts]
+csradar = "csradar.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["csradar*"]

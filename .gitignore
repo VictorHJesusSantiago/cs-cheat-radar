@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+.venv/
+.testhome/
+*.sqlite3
+*.dem
+*.json.out
+
+# --- complementos ---
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+build/
+dist/
+.eggs/
+htmlcov/
+.coverage
+coverage.xml
+.env
+.idea/
+.vscode/
+*.log
+logs/
+.DS_Store
+Thumbs.db
